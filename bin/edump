@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+if (isset($GLOBALS['_composer_autoload_path'])) {
+    if (is_file($GLOBALS['_composer_autoload_path'])) {
+        require_once $GLOBALS['_composer_autoload_path'];
+    }
+} else {
+    foreach (array(__DIR__ . '/../../autoload.php', __DIR__ . '/../vendor/autoload.php', __DIR__ . '/vendor/autoload.php') as $file) {
+        if (file_exists($file)) {
+            require_once $file;
+            break;
+        }
+    }
+}
+
+\inzh\elasticsearch\dump\cli\HighLevelProcessLauncher::execute("dump", $argv);

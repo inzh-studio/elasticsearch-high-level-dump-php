@@ -1,0 +1,35 @@
+{
+    "name": "inzh/elasticsearch-high-level-dump",
+    "description": "Tool for create or restore high level dump for cluster elasticsearch with search/scroll method",
+    "license": "CC-BY-4.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jean-Raffi Nazareth",
+            "email": "jr-nazareth@inzh.fr",
+            "role": "Developer"
+        }
+    ],
+    "time": "2022-03-07",
+    "keywords": [
+        "elasticsearch",
+        "bin"
+    ],
+    "support": {
+        "email": "contact@inzh.fr"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "inzh\\elasticsearch\\dump\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/edump",
+        "bin/erestore"
+    ],
+    "require": {
+        "php": ">=5.6",
+        "elasticsearch/elasticsearch": ">=1.4.1"
+    }
+}
