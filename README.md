@@ -61,7 +61,7 @@ cat output.json.gz | ./vendor/bin/erestore --gzip -b 1000 -es-host localhost -es
 ./vendor/bin/erestore --gzip -b 1000 -es-host localhost -es-port 9200 -i output.json.gz
 ```
 
-### Developpement:
+### Development:
 
 You can use directly process class in your code.
 
