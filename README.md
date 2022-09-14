@@ -1,6 +1,6 @@
 # Elasticsearch high level dump
 
-Elasticsearch high level dump is tool for create or restore dump from/to cluster elasticsearch with search/scroll method.
+A tool for creating and restoring dump on cluster Elasticsearch with search/scroll method.
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.6-8892BF.svg?logo=php)](https://php.net/)
 [![Minimum Elasticsearch Version](https://img.shields.io/badge/elasticsearch-%3E%3D%201.4-yellowgreen?logo=elasticsearch)](https://www.elastic.co/)
@@ -13,7 +13,7 @@ You can install this tool in your PHP project using composer:
 
 ## Usage
 
-> :warning: **All indexs is read with search/scrool method, and write with bulk method**, use with caution for preserve data integrity.
+> :warning: **All indexs is read with search/scrool method, and written with bulk method**, use with caution for preserve data integrity.
 
 ### Bash:
 
